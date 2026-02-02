@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Гопник-симулятор — Курение (симуляция)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site">
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Гопник-симулятор</h1>
+        <p class="lead">КУРЕНИЕ ПЛОХО — ЭТО ПРОСТО СИМУЛЯЦИЯ</p>
+        <div class="controls">
+          <button id="startBtn" class="btn">Начать курить</button>
+          <button id="stopBtn" class="btn ghost" disabled>Закончить</button>
+        </div>
+        <p class="hint">Фон: двор панелек. Чтобы поставить свою фотографию, замените PHOTO_URL в <code>script.js</code>.</p>
+      </div>
+    </header>
+
+    <section class="simulator">
+      <div class="scene" id="scene">
+        <!-- Canvas for smoke -->
+        <canvas id="smokeCanvas"></canvas>
+
+        <!-- Stylized gopnik character -->
+        <div class="gopnik" id="gopnik">
+          <div class="tracksuit"></div>
+          <div class="head"></div>
+          <div class="cigarette" id="cigarette"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Симуляция — курение вредно. Создано для примера.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
